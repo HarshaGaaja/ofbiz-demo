@@ -9,7 +9,6 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 OATS/Scripts/*/results
-config/config.properties
 logs/
 
 /.settings/
@@ -26,4 +25,3 @@ logs/
 /.idea/libraries/
 /.idea/markdown-doclet.xml
 /.idea/EnterpriseQEAutomation.iml
-config/config.properties
