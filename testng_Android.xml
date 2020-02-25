@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests" thread-count="4">
+  <test name="Test1"  >
+    <parameter name="browser" value="chrome" />
+    <parameter name="browserVersion" value="74" />
+    <parameter name="browserPlatform" value="Windows 10" />
+    <parameter name="locale" value="US_en" />
+    <parameter name="tunnel" value="yes" />
+    <parameter name="driverType" value="sauce" />
+    <parameter name="platform" value="windows" />
+    <parameter name="platformversion" value="8.0" />
+    <parameter name="isMobile" value="true"/>
+    <classes>
+      <class name="com.ofbiz.automation.runners.DefaultRunner3"/>
+    </classes>
+  </test>
+</suite> 

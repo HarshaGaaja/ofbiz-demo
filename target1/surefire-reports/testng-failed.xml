@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Test1(failed)">
+    <parameter name="mobileDeviceOrientation" value="portrait"/>
+    <parameter name="mobilePlatformName" value="Android"/>
+    <parameter name="locale" value="US_en"/>
+    <parameter name="mobileDeviceName" value="Samsung galaxy S9 Plus FHD GoogleAPI Emulator"/>
+    <parameter name="driverType" value="Locale"/>
+    <parameter name="mobileBrowser" value="chrome"/>
+    <parameter name="environment" value="UAT"/>
+    <parameter name="mobilePlatformVersion" value="7.1"/>
+    <parameter name="browserPlatform" value="Windows 10"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="75.0"/>
+    <parameter name="isMobile" value="false"/>
+    <parameter name="tunnel" value="yes"/>
+    <classes>
+      <class name="com.ofbiz.automation.runners.DefaultRunner3">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.beachbody.automation.runners.DefaultRunner -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

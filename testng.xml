@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test1"  >
+    <!--Driver type, Make sure to choose one of this (Sauce/Grid/Local)  don't choose whatever you need -->
+    <parameter name="driverType" value="Local" />
+
+    <!-- App Related Properties -->
+    <parameter name="locale" value="en_US" />
+    <parameter name="tunnel" value="yes" />
+      <parameter name="environment" value="DEV" />
+
+
+
+    <!-- Browser Related Properties -->
+    <!-- Should be one of the browser (chrome/safari/firefox/iexplorer/edge-->
+    <parameter name="browser" value="chrome" />
+    <parameter name="browserVersion" value="latest" />
+    <parameter name="browserPlatform" value="Windows 10" />
+
+   <!-- Mobile Related Properties -->
+   <parameter name="isMobile" value="false"/>
+   <parameter name="mobileDeviceName" value="Samsung galaxy S9 Plus FHD GoogleAPI Emulator" />
+   <parameter name="mobileDeviceOrientation" value="portrait" />
+   <parameter name="mobilePlatformVersion" value="7.1" />
+   <parameter name="mobilePlatformName" value="Android" />
+   <parameter name="mobileBrowser" value="chrome" />
+
+    <!-- Test case to run -->
+    <classes>
+      <class name="com.ofbiz.automation.runners.DefaultRunner3"/>
+    </classes>
+  </test>
+</suite> 

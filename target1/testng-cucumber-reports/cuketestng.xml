@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="1" passed="0" skipped="0" total="1">
+<suite duration-ms="352410" name="cucumber.runtime.formatter.TestNGFormatter">
+<test duration-ms="352410" name="cucumber.runtime.formatter.TestNGFormatter">
+<class name="Coach user checkout with Shakeology">
+<test-method duration-ms="352410" finished-at="2019-09-17T15:52:09Z" name="Coach user checkout with Shakeology" started-at="2019-09-17T15:52:09Z" status="FAIL">
+<exception class="java.sql.SQLSyntaxErrorException">
+<message><![CDATA[Given I am on TBB home page.................................................passed
+When I click on become a coach from coach menu..............................passed
+Then signup page should be displayed........................................passed
+And I enter my information "US","en","Coosign#123","3456789012","01","22","1993","567895432","/s/SMAPLE".passed
+When I click on Continue....................................................passed
+Then Coach registered sucessfully and navigated to challenge pack step......passed
+And I click on No thanks button to navigate to shakeology step..............passed
+When I select Shakeology pack "SHKCHVegan"..................................passed
+And I add to cart shakeology order with "30","Monthly" and "1" options......passed
+Then I click on No thanks buttons to navigate to offers page................passed
+Then I skip offers to continue shopping.....................................passed
+Then I enter my shipping information "3301 Exposition Blvd","Santa Monica","CA","90404".passed
+And I validates the QAS address.............................................passed
+Then I select shipping option "1" and click on continue.....................passed
+And I enter payment details.................................................passed
+And I submit order..........................................................passed
+Then I should be able to see a successful order placement with an Order ID..passed
+And I verify ATG, EBS, life ray, by design users are provisioned............passed
+Then I verify user is syndicated in EBS.....................................passed
+And I verify order is syndicated in EBS.....................................passed
+And I verify order is syndicated to COM through EBS.........................failed
+Given I hit the byd soap request by placed orderNumber......................skipped
+And I validate response code 200............................................skipped
+Then I save coach id using placed order response body.......................skipped
+Given I get REP info response details using coach id........................skipped
+And I validate response code 200............................................skipped
+And I validate coach details billing Country "US" and Billing Street One "3301 Exposition Blvd", billing city "Santa Monica" and ship state "CA", ship postal code "90404" and phone number "3456789012".skipped
+]]></message>
+<full-stacktrace><![CDATA[java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:876)
+
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+
+	at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:4721)
+
+	at oracle.jdbc.driver.OracleStatement.doScrollStmtExecuteQuery(OracleStatement.java:4854)
+
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1505)
+
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:406)
+
+	at com.beachbody.automation.utilities.DBConnectionUtilities.executeQueryUsingScrollableResultSet(DBConnectionUtilities.java:115)
+
+	at com.beachbody.automation.utilities.DBConnectionUtilities.waitForResult(DBConnectionUtilities.java:138)
+
+	at com.beachbody.automation.stepdefs.dbstep.DBValidationSteps.iVerifyOrderIsSyndicatedToCOMThroughEBS(DBValidationSteps.java:100)
+
+	at ✽.I verify order is syndicated to COM through EBS(file:src/test/resources/features/e2e/TCID_C6019498.feature:26)
+
+]]></full-stacktrace>
+</exception>
+</test-method>
+</class>
+</test>
+</suite>
+</testng-results>

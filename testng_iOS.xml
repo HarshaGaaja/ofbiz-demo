@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-method Suite1" parallel="tests" thread-count="10" data-provider-thread-count="3">
+    <test name="Test-method test" group-by-instances="true">
+        <!--Driver type, Make sure to choose one of this (Sauce/Grid/Local)  don't choose whatever you need -->
+        <parameter name="driverType" value="Sauce"/>
+
+        <!-- App Related Properties -->
+        <parameter name="locale" value="en_US"/>
+        <parameter name="tunnel" value="yes"/>
+        <parameter name="environment" value="UAT"/>
+
+        <!-- Browser Related Properties -->
+        <!-- Should be one of the browser (chrome/safari/firefox/iexplorer/edge-->
+        <parameter name="browser" value="safari"/>
+        <parameter name="browserVersion" value="latest"/>
+        <parameter name="browserPlatform" value="macOS 10.14"/>
+
+        <!-- Mobile Related Properties -->
+        <parameter name="isMobile" value="true"/>
+        <parameter name="mobileDeviceName" value="iPhone XS Max Simulator"/>
+        <parameter name="mobileDeviceOrientation" value="portrait"/>
+        <parameter name="mobilePlatformVersion" value="12.2"/>
+        <parameter name="mobilePlatformName" value="iOS"/>
+        <parameter name="mobileBrowser" value="Safari"/>
+        <!-- Test case to run -->
+        <classes>
+            <class name="com.ofbiz.automation.runners.DefaultRunner3"/>
+        </classes>
+    </test>
+
+
+</suite>

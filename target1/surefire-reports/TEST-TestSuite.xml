@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="359.989" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\harsha.gaaja\IdeaProjects\EnterpriseQEAutomation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\harsha.gaaja\IdeaProjects\EnterpriseQEAutomation"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\HARSHA~1.GAA\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Git\cmd;D:\maven\bin;C:\Program Files (x86)\MEdge;C:\Users\harsha.gaaja\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="D:\maven\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\maven\bin\..\lib\jansi-native"/>
+    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
+    <property name="user.home" value="C:\Users\harsha.gaaja"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="harsha.gaaja"/>
+    <property name="java.class.path" value="D:\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dsurefire.suiteXmlFiles=testng.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="runScenario" classname="DefaultRunner" time="353.004">
+    <failure message="ORA-00942: table or view does not exist&#10;" type="java.sql.SQLSyntaxErrorException">java.sql.SQLSyntaxErrorException: 
+ORA-00942: table or view does not exist
+
+</failure>
+    <system-out><![CDATA[[INFO] Thread Id  | Scenario Num       | Step Count
+[INFO] Scenario IS Coach user checkout with Shakeology
+[INFO] Navigating to Coach Office Login page
+[INFO] Into Config file reader
+[INFO] Into Config 
+[INFO] Verifying homepage title
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Verification of element displayed status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Element is enabled or displayed in page:By.xpath: //a[@data-track-value='clickhere']
+[INFO] Clicking object using By element : By.xpath: //a[@data-track-value='clickhere']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Verifying homepage title
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Clicking on Coachmenu
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking object using By element : By.xpath: //a[@data-track='Coach']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on become a coach signup button
+[INFO] Clicking object using By element : By.xpath: //img[@id='oneOff']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Verifying signup status
+[INFO] Element is enabled or displayed in page
+[INFO] Verifying fill information
+[INFO] Selecting country
+[INFO] Selecting value : US : from dropdown using element : By.xpath: //select[@id='coach_business_country']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting language
+[INFO] Selecting value : en : from dropdown using element : By.xpath: //select[@id='language_primary']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] the random email used to place order is dkhdrv@yopmail.com
+[INFO] Entering first name
+[INFO] Entering text using By element : By.xpath: //input[@name='fname']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='fname']
+[INFO] Entering last name
+[INFO] Entering text using By element : By.xpath: //input[@name='lname']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='lname']
+[INFO] Entering email
+[INFO] Entering text using By element : By.xpath: //input[@id='email']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='email']
+[INFO] Entering confirmation email
+[INFO] Entering text using By element : By.xpath: //input[@id='email_confirm']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='email_confirm']
+[INFO] Entering email
+[INFO] Entering text using By element : By.xpath: //input[@id='password']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='password']
+[INFO] Entering confirmation password
+[INFO] Entering text using By element : By.xpath: //input[@id='password_confirm']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='password_confirm']
+[INFO] Clicking on male radio button
+[INFO] Clicking object using By element : By.xpath: //input[@id='gender_male']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Entering confirmation email
+[INFO] Entering text using By element : By.xpath: //input[@id='phone']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='phone']
+[INFO] Selecting birth month
+[INFO] Selecting value : 01 : from dropdown using element : By.xpath: //select[@name='coach_birth_month']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting birth date
+[INFO] Selecting value : 22 : from dropdown using element : By.xpath: //select[@name='coach_birth_day']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting birth year
+[INFO] Selecting value : 1993 : from dropdown using element : By.xpath: //select[@name='coach_birth_year']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Entering govt id
+[INFO] Entering text using By element : By.xpath: //input[@id='business_govid']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='business_govid']
+[INFO] Entering signature
+[INFO] Entering text using By element : By.xpath: //input[@name='txt_signature']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='txt_signature']
+[INFO] Clicking on NO coach button
+[INFO] Element is enabled or displayed in page
+[INFO] Scroll to element and perform click operation
+[INFO] Element is clicked successfully
+[INFO] Clicking object using By element : By.xpath: //input[@id='refer_coach_no']/../div
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on disclaimer checkbox
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Scroll to element and perform click operation
+[INFO] Element is clicked successfully
+[INFO] Clicking object using By element : By.xpath: //input[@id='chk_coach_conditions']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on terms checkbox
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Clicking object using By element : By.xpath: //input[@id='chk_terms_conditions']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on continue button
+[INFO] Element is enabled or displayed in page
+[INFO] Verifying signup status
+[INFO] Element is enabled or displayed in page
+[INFO] Verifying challenge pack status
+[INFO] Element is enabled or displayed in page
+[INFO] Click on no thanks button
+[INFO] Scroll to curser to Height
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking object using By element : By.cssSelector: a[data-track-value*='nothanks']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Verifying shakeology status
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting challenge packSHKCHVegan
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking object using By element : By.xpath: //li[@id='SHKCHVegan']//a[@data-track='select']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Verifying PDP page title 
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Selecting packaging option
+[INFO] Selecting value : 30 : from dropdown using element : By.xpath: (//select[contains(@id,"packaging")])[1]
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting shakelogy order type
+[INFO] Selecting value : Monthly : from dropdown using element : By.xpath: //select[contains(@id,"order-type")]
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting product quantity
+[INFO] Selecting value : 1 : from dropdown using element : By.xpath: //select[@id="quantity"]
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Click on add to cart button
+[INFO] Clicking object using By element : By.xpath: //button[@data-track='addToCart']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Click on no thanks button
+[INFO] Scroll to curser to Height
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking object using By element : By.cssSelector: a[data-track-value*='nothanks']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Click on no thanks button
+[INFO] Scroll to curser to Height
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking object using By element : By.cssSelector: a[data-track-value*='nothanks']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on continue to shipping button
+[INFO] Clicking object using By element : By.xpath: (//a[contains(text(),'CONTINUE TO SHIPPING')])[last()]
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Entering shipping address details
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Entering address
+[INFO] Entering text using By element : By.xpath: //input[@name='address1']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='address1']
+[INFO] Entering city
+[INFO] Entering text using By element : By.xpath: //input[@name='city']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='city']
+[INFO] Entering address
+[INFO] Entering text using By element : By.xpath: //input[@name='address1']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='address1']
+[INFO] Entering city
+[INFO] Entering text using By element : By.xpath: //input[@name='city']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='city']
+[INFO] Selecting state
+[INFO] Selecting value : CA : from dropdown using element : By.xpath: //select[@name='state']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Entering zip
+[INFO] Entering text using By element : By.xpath: //input[@name='postalCode']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='postalCode']
+[INFO] Clicking object using By element : By.xpath: //input[@name='city']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking QAaddress button
+[INFO] Clicking object using By element : By.xpath: //button[@data-track-value='qas:addressvalidation:no']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting shipping method
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting value : 1 : from dropdown using element : By.xpath: //select[@id='shipping-methods']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on continue button
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking object using By element : By.xpath: (//a[@data-track-value='continue'])[2]
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Entering user credit card details
+[INFO] Getting text from element : By.xpath: //ul[@class='price-summary order-total show-for-medium-up']/li/span
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] $149.55
+[INFO] Verifying payment page
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Element is enabled or displayed in page
+[INFO] Entering CC fisrt name
+[INFO] Entering text using By element : By.xpath: //input[@id='pymt_cardname']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='pymt_cardname']
+[INFO] Entering CC last name
+[INFO] Entering text using By element : By.xpath: //input[@id='last_name']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@id='last_name']
+[INFO] Entering credit card number
+[INFO] Entering text using By element : By.xpath: //input[@name='ccNumberMasked']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='ccNumberMasked']
+[INFO] Selecting expire month
+[INFO] Selecting value : 08 : from dropdown using element : By.xpath: //select[@name='ccMonth']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Selecting expire year
+[INFO] Selecting value : 2024 : from dropdown using element : By.xpath: //select[@name='ccYear']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Entering Card cvv
+[INFO] Entering text using By element : By.xpath: //input[@name='ccCVV']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page:By.xpath: //input[@name='ccCVV']
+[INFO] Clicking on disclaimer and terms conditions checkboxes
+[INFO] Clicking on ContinuityDisclaimer Checkbox
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Clicking object using By element : By.xpath: //input[@id='ContinuityDisclaimer_checkbox']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on Terms and Conditions Checkbox
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Scroll to element and perform click operation
+[INFO] Element is clicked successfully
+[INFO] Clicking object using By element : By.xpath: //input[@id='termsAndConditions_checkbox']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking on Submit Order Button
+[INFO] Element is enabled or displayed in page
+[INFO] Clicking object using By element : By.xpath: //input[contains(@value,"Submit")]
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] Getting and saving order number
+[INFO] Verifying order number presence
+[INFO] Verification of element presence status
+[INFO] Visibility of Element is located as expected with condition Implicit wait
+[INFO] Customer details :{Zip=90404, State=CA, TotalPrice=$149.55, Address1=3301 Exposition Blvd, City=Santa Monica}
+[INFO] Order Details :{}
+[INFO] Getting order number
+[INFO] Getting text from element : By.xpath: //div[@id='orderNumber']
+[INFO] Element is clickable with condition Implict wait
+[INFO] Element is enabled or displayed in page
+[INFO] STORE_830303315
+[INFO] The recently placed order number is STORE_830303315
+[INFO] Db connection got created on IDM
+[INFO] Exeucting the query select ost.ost_status USER_STATUS, obj.obj_name APPLICATION, obj.obj_key
+from prodoim_oim.oiu
+inner join prodoim_oim.ost on oiu.ost_key = ost.ost_key
+inner join prodoim_oim.obi on oiu.obi_key = obi.obi_key
+inner join prodoim_oim.obj on obi.obj_key = obj.obj_key
+where oiu.usr_key=(select usr_key from prodoim_oim.usr where USR_EMAIL ='dkhdrv@yopmail.com')
+[INFO] Exeucting the query select ost.ost_status USER_STATUS, obj.obj_name APPLICATION, obj.obj_key
+from prodoim_oim.oiu
+inner join prodoim_oim.ost on oiu.ost_key = ost.ost_key
+inner join prodoim_oim.obi on oiu.obi_key = obi.obi_key
+inner join prodoim_oim.obj on obi.obj_key = obj.obj_key
+where oiu.usr_key=(select usr_key from prodoim_oim.usr where USR_EMAIL ='dkhdrv@yopmail.com')
+[INFO] Db connection got created on EBS
+[INFO] Exeucting the query select hp.attribute4 byd_sponsor_id,hca.attribute14 Customer_Role,hp.attribute3 byd_cust_id, hp.attribute2 byd_coach_id from apps.hz_parties hp, apps.hz_cust_accounts hca where hp.party_id = hca.party_id and UPPER(hp.EMAIL_ADDRESS) ='DKHDRV@YOPMAIL.COM'
+[INFO] Db connection got created on EBS
+[INFO] Exeucting the query select ORDER_NUMBER,FLOW_STATUS_CODE,CREATION_DATE from oe_order_headers_all where orig_sys_document_ref='STORE_830303315'
+[INFO] Exeucting the query select ORDER_NUMBER,FLOW_STATUS_CODE,CREATION_DATE from oe_order_headers_all where orig_sys_document_ref='STORE_830303315'
+[INFO] Exeucting the query select ORDER_NUMBER,FLOW_STATUS_CODE,CREATION_DATE from oe_order_headers_all where orig_sys_document_ref='STORE_830303315'
+[INFO] Exeucting the query select PROCESS_FLAG,ERROR_MESSAGE from xxdaz_order_import_headers where orig_sys_document_ref='STORE_830303315'
+[INFO] Db connection got created on EBS
+[INFO] Exeucting the query select PROCESS_FLAG,ERROR_MESSAGE from XXPP_ICENTRIS_EXTRACT_HEADERS where order_number='STORE_830303315'
+[INFO] im coming out of scenario Coach user checkout with ShakeologychromeUS_en
+[INFO] Exception thrown while attaching screenshot
+[INFO] Closing browser
+[INFO] Closing browser
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Sep 17, 2019 3:46:16 PM java.util.prefs.WindowsPreferences <init>
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+Starting ChromeDriver 77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}) on port 12376
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 17, 2019 3:46:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

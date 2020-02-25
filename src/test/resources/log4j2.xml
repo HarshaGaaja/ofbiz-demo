@@ -1,0 +1,63 @@
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<!-- DO NOT REMOVE -->
+<Configuration status="warn">
+    <Appenders>
+        <Routing name="myRoutingAppender">
+            <!-- log events are routed to appenders based on the logLevel program argument -->
+            <Routes pattern="$${main:logLevel}">
+                <!-- If the logLevel argument is followed by DEBUG this route is used -->
+                <Route ref="DebugFile" key="DEBUG" />
+                <!-- If the logLevel argument is omitted or followed by any other value this route is used -->
+                <Route ref="InfoFile" />
+            </Routes>
+        </Routing>
+
+        <!-- This appender is not necessary, was used to test the config -->
+        <Console name="Console" target="SYSTEM_OUT">
+        <PatternLayout pattern="[%p] [%t] %x - %m%n"/>
+
+        </Console>
+
+        <!-- Below are the 2 appenders used by the Routing Appender from earlier -->
+        <File name="DebugFile" fileName="logs/Debug.log" immediateFlush="true"
+            append="false">
+        <PatternLayout pattern="[%p] [%t] %x - %m%n"/>
+        </File>
+
+        <File name="InfoFile" fileName="logs/Info.log" immediateFlush="true"
+            append="false">
+        <PatternLayout pattern="[%p] [%t] %x - %m%n"/>>
+            <LevelRangeFilter minLevel="FATAL" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root logger is set to DEBUG intentionally so that debug events are generated.
+             However, events may be ignored by the LevelRangeFilter depending on where they
+             are routed by the Routing Appender
+         -->
+        <Root level="DEBUG">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="myRoutingAppender" />
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="353833" started-at="2019-09-17T10:16:15Z" finished-at="2019-09-17T10:22:09Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberParallelTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.beachbody.automation.runners.DefaultRunner@6c64cb25]" name="runScenario" class="com.beachbody.automation.runners.AbstractTestNGCucumberParallelTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test1" duration-ms="353833" started-at="2019-09-17T10:16:15Z" finished-at="2019-09-17T10:22:09Z">
+      <class name="com.beachbody.automation.runners.DefaultRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.beachbody.automation.runners.DefaultRunner@6c64cb25]" name="setUpClass" is-config="true" duration-ms="165" started-at="2019-09-17T10:16:15Z" finished-at="2019-09-17T10:16:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.beachbody.automation.runners.DefaultRunner@6c64cb25]" name="before" is-config="true" duration-ms="11" started-at="2019-09-17T10:16:15Z" finished-at="2019-09-17T10:16:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.beachbody.automation.runners.DefaultRunner@6c64cb25]" name="runScenario" duration-ms="352996" started-at="2019-09-17T10:16:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-17T10:22:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Coach user checkout with Shakeology"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Coach user checkout with Shakeology"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[ORA-00942: table or view does not exist
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:876)
+at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:4721)
+at oracle.jdbc.driver.OracleStatement.doScrollStmtExecuteQuery(OracleStatement.java:4854)
+at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1505)
+at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:406)
+at com.beachbody.automation.utilities.DBConnectionUtilities.executeQueryUsingScrollableResultSet(DBConnectionUtilities.java:115)
+at com.beachbody.automation.utilities.DBConnectionUtilities.waitForResult(DBConnectionUtilities.java:138)
+at com.beachbody.automation.stepdefs.dbstep.DBValidationSteps.iVerifyOrderIsSyndicatedToCOMThroughEBS(DBValidationSteps.java:100)
+at ✽.I verify order is syndicated to COM through EBS(file:src/test/resources/features/e2e/TCID_C6019498.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.beachbody.automation.runners.DefaultRunner@6c64cb25]" name="after" is-config="true" duration-ms="0" started-at="2019-09-17T10:22:08Z" finished-at="2019-09-17T10:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.beachbody.automation.runners.DefaultRunner@6c64cb25]" name="tearDownClass" is-config="true" duration-ms="578" started-at="2019-09-17T10:22:08Z" finished-at="2019-09-17T10:22:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.beachbody.automation.runners.DefaultRunner@6c64cb25]" name="afterSuite" is-config="true" duration-ms="4594" started-at="2019-09-17T10:22:09Z" finished-at="2019-09-17T10:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.beachbody.automation.runners.DefaultRunner -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
