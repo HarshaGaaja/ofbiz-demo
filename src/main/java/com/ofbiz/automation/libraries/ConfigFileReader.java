@@ -14,7 +14,7 @@ public class ConfigFileReader {
 	private Properties properties;
 	private Properties orProperties;
 	public static Properties dbProperties;
-	private final String propertyFilePath = System.getProperty("user.dir") + "/config/config.properties";
+	private final String propertyFilePath = System.getProperty("user.dir") + "/config/config1.properties";
 	private final String objectrepositoryFilePath = System.getProperty("user.dir")
 			+ "/configs/objectrepository.properties";
 	Logger logger = LogManager.getLogger(ConfigFileReader.class);
