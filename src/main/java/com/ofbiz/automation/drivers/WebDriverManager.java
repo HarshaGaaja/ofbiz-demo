@@ -73,8 +73,11 @@ public class WebDriverManager {
 				}
 				HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 				chromePrefs.put("profile.default_content_settings.popups", 0);
-				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.setExperimentalOption("prefs", chromePrefs);
+//				ChromeOptions chromeOptions = new ChromeOptions();
+//				chromeOptions.setExperimentalOption("prefs", chromePrefs);
+				ChromeOptions chromeOptions= new ChromeOptions();
+				chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+				System.setProperty("webdriver.chrome.driver","C:\\Users\\harsha.gaaja\\Downloads\\chromedriver_win32\\chromedriver.exe");
 				this.driver = new ChromeDriver(chromeOptions);
 				break;
 			case "safari":
