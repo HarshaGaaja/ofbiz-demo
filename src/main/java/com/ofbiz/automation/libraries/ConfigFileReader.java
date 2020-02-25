@@ -57,6 +57,7 @@ public class ConfigFileReader {
 			if (configType.equalsIgnoreCase("CONFIG")) {
 				logger.info("Into Config ");
 				properties = new Properties();
+				logger.info("The property file path is as :: "+propertyFilePath);
 				reader = new BufferedReader(new FileReader(propertyFilePath));
 				try {
 					properties.load(reader);
