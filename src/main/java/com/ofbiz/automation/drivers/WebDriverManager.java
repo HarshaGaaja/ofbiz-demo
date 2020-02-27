@@ -77,7 +77,7 @@ public class WebDriverManager {
 				chromeOptions.setExperimentalOption("prefs", chromePrefs);
 				chromeOptions.addArguments("--no-sandbox");
 				chromeOptions.addArguments("--window-size=1420,1080");
-				chromeOptions.addArguments("--headless");
+//				chromeOptions.addArguments("--headless");
 				chromeOptions.addArguments("--disable-gpu");
 				this.driver = new ChromeDriver(chromeOptions);
 				break;
