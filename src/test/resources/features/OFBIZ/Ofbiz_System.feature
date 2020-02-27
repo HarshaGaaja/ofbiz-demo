@@ -1,4 +1,4 @@
-@Ofbiz @SystemTesting
+@Ofbiz @SystemTesting @Demo
   Feature: Verifying the Order Functionality
     Scenario: Verifying the Order Functionality
 
