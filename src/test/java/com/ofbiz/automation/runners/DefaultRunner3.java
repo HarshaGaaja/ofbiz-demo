@@ -5,9 +5,9 @@ import org.apache.logging.log4j.core.config.Configurator;
 
 @CucumberOptions(glue = { "com.ofbiz.automation.stepdefs", "com.ofbiz.automation.hooks" }, plugin = {
 		"json:target/json-cucumber-reports/cukejson.json", "testng:target/testng-cucumber-reports/cuketestng.xml",
-		"html:target/cucumber", "html:target/reports/htmlreport", "json:target/cucumber1.json",
+		"html:target/cucumber", "html:target/reports/htmlreport", "json:target/cucumber.json",
 		"html:target/site/cucumber-pretty" },
-		tags={"@SystemTesting"},
+		tags={"@Login"},
 		features = "src/test/resources/features/OFBIZ")
 public class DefaultRunner3 extends AbstractTestNGCucumberParallelTests {
 	static {
