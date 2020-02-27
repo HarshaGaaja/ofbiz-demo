@@ -1,4 +1,4 @@
-@Ofbiz @Smoke
+@Ofbiz @Smoke @Demo
   Feature: Verifying the Accounting-AP functionality
     Scenario: Verifying the Accounting-AP functionality
 
