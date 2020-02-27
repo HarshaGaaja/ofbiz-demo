@@ -40,10 +40,10 @@ public class OfbizLoginPage extends BasePage {
         try {
             logger.info("Navigating to Ofbiz Login Page");
             navigateToWebPage(ConfigFileReader.getConfigFileReader().getOFBIZUrl(world.getTestEnvironment()));
-            syncObjects("hcwait2");
-            click(buttonAdvance);
-            logger.info("Clicking on proceed link");
-            click(linkproceed);
+//            syncObjects("hcwait2");
+//            click(buttonAdvance);
+//            logger.info("Clicking on proceed link");
+//            click(linkproceed);
         } catch (Exception e) {
             throw new ToInvestigateException(e.getMessage());
         }
