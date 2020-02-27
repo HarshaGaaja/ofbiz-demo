@@ -1,4 +1,4 @@
- @UnitTesting1
+ @UnitTesting1 @Demo
   Feature: Verifying the Application Modules Functionality
     Scenario: Verifying the Application Modules Functionality
 

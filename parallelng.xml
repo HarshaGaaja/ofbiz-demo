@@ -3,7 +3,7 @@
 <suite name="Test-method Suite1" parallel="tests" thread-count="1" data-provider-thread-count="1" >
   <test name="Test-method test" group-by-instances="true">
     <!--Driver type, Make sure to choose one of this (Sauce/Grid/Local)  don't choose whatever you need -->
-    <parameter name="driverType" value="Local" />
+    <parameter name="driverType" value="Sauce" />
 
     <!-- App Related Properties -->
     <parameter name="locale" value="en_US" />

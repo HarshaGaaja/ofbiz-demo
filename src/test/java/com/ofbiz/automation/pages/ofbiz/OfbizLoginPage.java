@@ -40,10 +40,11 @@ public class OfbizLoginPage extends BasePage {
         try {
             logger.info("Navigating to Ofbiz Login Page");
             navigateToWebPage(ConfigFileReader.getConfigFileReader().getOFBIZUrl(world.getTestEnvironment()));
-//            syncObjects("hcwait2");
-//            click(buttonAdvance);
-//            logger.info("Clicking on proceed link");
-//            click(linkproceed);
+            pause(20000);
+            syncObjects("hcwait2");
+            click(buttonAdvance);
+            logger.info("Clicking on proceed link");
+            click(linkproceed);
         } catch (Exception e) {
             throw new ToInvestigateException(e.getMessage());
         }
@@ -54,7 +55,7 @@ public class OfbizLoginPage extends BasePage {
         try {
             logger.info("Trying to Login to Ofbiz");
             waitForElementToDisplay(inputEmail, 10);
-            logger.info("Entering email");
+            logger.info("Entering username");
             enterText(inputEmail, username);
             logger.info("Entering Password");
             enterText(inputPassword, password);
