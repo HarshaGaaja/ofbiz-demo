@@ -179,6 +179,7 @@ public class OfbizHomePage extends BasePage {
     public void clickOnApplication() {
         try {
             logger.info("Clicking on Application");
+            syncObjects("hcwait2");
             onMouseOver(textApplication);
             click(textApplication);
         } catch (Exception e) {
@@ -189,6 +190,7 @@ public class OfbizHomePage extends BasePage {
     public void clickOnAccountingAP() {
         try {
             logger.info("Clicking on Application");
+            syncObjects("hcwait2");
             onMouseOver(textAccountingAP);
             click(textAccountingAP);
         } catch (Exception e) {
@@ -309,6 +311,7 @@ public class OfbizHomePage extends BasePage {
     public void clickOnOrderModule() {
         try {
             logger.info("Clicking on Order Module");
+            syncObjects("hcwait2");
             click(buttonOrder);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
@@ -318,6 +321,7 @@ public class OfbizHomePage extends BasePage {
     public void clickOrderManagermenu() {
         try {
             logger.info("Clicking on Order Manager menu");
+            syncObjects("hcwait2");
             click(menuOrderManager);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
@@ -327,6 +331,7 @@ public class OfbizHomePage extends BasePage {
     public void clickOrderList() {
         try {
             logger.info("Clicking on Order List");
+            syncObjects("hcwait2");
             click(selectOrderList);
             verifyElementDisplayed(menuOrderList);
         } catch (Exception e) {
@@ -337,16 +342,27 @@ public class OfbizHomePage extends BasePage {
     public void selectAllChkBoxesInOrdrList() {
         try {
             logger.info("Selecting All Check boxes In Orders List");
+            syncObjects("hcwait2");
             click(chkHeld);
+            syncObjects("hcwait2");
             click(chkCompleted);
+            syncObjects("hcwait2");
             click(chkRejected);
+            syncObjects("hcwait2");
             click(chkCanceled);
+            syncObjects("hcwait2");
             click(chkPurchaseOrder);
+            syncObjects("hcwait2");
             click(chkInventoryProblems);
+            syncObjects("hcwait2");
             click(chkAuthorisationProblems);
+            syncObjects("hcwait2");
             click(chkPartiallyReceived);
+            syncObjects("hcwait2");
             click(chkopenPast);
+            syncObjects("hcwait2");
             click(chkRejectedItems);
+            syncObjects("hcwait2");
             click(buttonFind);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
@@ -357,6 +373,7 @@ public class OfbizHomePage extends BasePage {
         try {
             logger.info("Clicking On Order number");
             click(buttonDemoOrdNum);
+            syncObjects("hcwait2");
             verifyElementDisplayed(menuFindOrders);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
@@ -366,6 +383,7 @@ public class OfbizHomePage extends BasePage {
     public void VerifyStatusHistoryASCompleted() {
         try {
             logger.info("Verifying Status As Completed");
+            syncObjects("hcwait2");
             verifyElementDisplayed(txtCompleted);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
@@ -375,6 +393,7 @@ public class OfbizHomePage extends BasePage {
     public void selectOtherOrders() {
         try {
             logger.info("Clicking on Other Orders button");
+            syncObjects("hcwait2");
             click(buttonOtherOrd);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
@@ -384,6 +403,7 @@ public class OfbizHomePage extends BasePage {
     public void clickOtherorderNumber() {
         try {
             logger.info("Clicking on Other Order Number");
+            syncObjects("hcwait2");
             click(buttonDemOrdNum);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
@@ -393,6 +413,7 @@ public class OfbizHomePage extends BasePage {
     public void verifyStatusHistoryAsApproved() {
         try {
             logger.info("Verifying Staus As Approved");
+            syncObjects("hcwait2");
             click(textApproved);
         } catch (Exception e) {
             failScenarioAndReportInfo(this.getClass().getSimpleName() + " >> " + world.getMyMethodName(),e);
